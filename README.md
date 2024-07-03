@@ -18,23 +18,27 @@ The next step is to engineer new features from the existing ones. For example, w
 new feature that represents the ratio of the square footage to the number of bedrooms. This can help us
 understand how the size of the house affects the price.
 
- ### Model Selection and Training
- 1. **Gradient Boosting Regressor**:- Trained using `GradientBoostingRegressor` on the selected features.- Evaluated using Root Mean Squared Error (RMSE).
- 2. **Linear Regression**:- Trained using `LinearRegression`.- Evaluated using Mean Squared Error (MSE) and R^2 score.
- 3. **Random Forest Regressor**:- Trained using `RandomForestRegressor`.- Evaluated using Mean Squared Error (MSE) and R^2 score
-4. **Support Vector Regressor**:- Trained using `SVR`.- Eval
-
- ### Model Evaluation- **Evaluation Metrics**: Used RMSE for Gradient Boosting and MSE, R^2 for Linear
- Regression and Random Forest.- **Visualization**:- Plotted Actual vs Predicted SalePrice for Random Forest.- Visualized feature importance for Random Forest to understand which features are most
- influential
+### Model Selection and Training
+1. **Gradient Boosting Regressor**:- Trained using `GradientBoostingRegressor` on the selected features.- Evaluated using Root Mean Squared Error (RMSE).
+2. **Linear Regression**:- Trained using `LinearRegression`.- Evaluated using Mean Squared Error (MSE) and R^2 score.
+3. **Random Forest Regressor**:- Trained using `RandomForestRegressor`.- Evaluated using Mean Squared Error (MSE) and R^2 score
+4. **Support Vector Regressor**:- Trained using `SVR`.- Evaluated using Mean Squared Error (MSE) and R^2 score.
 
   ### Design Choices- **Gradient Boosting Regressor**: Chosen for its ability to handle non-linear relationships and
  interactions between features.- **Random Forest Regressor**: Chosen for its robustness and ability to handle over fitting by
  averaging multiple decision trees.- **Linear Regression**: Included for comparison as a baseline model
 
- ## Challenges- **Data Cleaning**: Handling missing values was crucial to avoid biases and ensure model
- accuracy.- **Feature Selection**: Selecting the right features without overfitting the model required careful
- consideration.
+### Model Evaluation
+- **Evaluation Metrics**: Used RMSE for Gradient Boosting and MSE, R^2 for Linear Regression and Random Forest.
+- **Visualization**: Plotted Actual vs Predicted SalePrice for Random Forest.- Visualized feature importance for Random Forest to understand which features are most influential.
 
- - **Model Evaluation**: Choosing appropriate metrics to evaluate and compare models was
- essential to select the best performing model
+### Design Choices
+- **Gradient Boosting Regressor**: Chosen for its ability to handle non-linear relationships and interactions between features.
+- **Random Forest Regressor**: Chosen for its robustness and ability to handle overfitting by averaging multiple decision trees.
+- **Linear Regression**: Included for comparison as a baseline model.
+
+## Challenges
+- **Data Cleaning**: Handling missing values was crucial to avoid biases and ensure model accuracy.
+- **Feature Selection**: Selecting the right features without overfitting the model required careful consideration.
+- **Model Evaluation**: Choosing appropriate metrics to evaluate and compare models was essential to select the best performing model.
+
